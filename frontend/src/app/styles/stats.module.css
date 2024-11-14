@@ -1,0 +1,99 @@
+.statsContainer {
+  display: flex;
+  justify-content: center; /* Centrar los elementos horizontalmente */
+  align-items: center; /* Centrar los elementos verticalmente */
+  padding: 20px;
+  background-color: #212223; /* Fondo oscuro */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea si es necesario */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.statItem {
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Asegura que el contenido esté centrado verticalmente */
+  height: 250px; /* Ajusta la altura según sea necesario */
+  min-width: 250px; /* Asegura que cada elemento tenga un ancho mínimo */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0066FF;
+  margin-bottom: 10px; /* Espacio debajo del número */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.statLabel {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #FF5733; /* Color rojo para "Successfully Served" */
+  margin: 10px 0; /* Espacio arriba y abajo para centrar */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.statSubLabel {
+  font-size: 1rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Estilos específicos para cada texto */
+.servedLabel {
+  color: #FF5733; /* Ejemplo: Color diferente para "Successfully Served" */
+  font-weight: 700; /* Ajuste del peso de la fuente */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.connectedLabel {
+  color: #00e1ffab; /* Ejemplo: Color diferente para "Successfully Connected" */
+  font-weight: 600; /* Ajuste del peso de la fuente */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.deliveredLabel {
+  color: #28A745; /* Ejemplo: Color diferente para "Delivered" */
+  font-weight: 500; /* Ajuste del peso de la fuente */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Nueva clase específica para mover "Successfully Connected" hacia arriba */
+.connectedLabelTop {
+  position: relative;
+  top: -40px; /* Ajusta este valor según sea necesario */
+  margin-bottom: -20px; /* Esto ayuda a cerrar el espacio entre el texto y el número */
+  color: #0066FF;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .statsContainer {
+    flex-direction: column; /* Coloca los elementos en una columna en lugar de una fila */
+  }
+
+  .statItem {
+    width: 100%; /* Cada elemento ocupa el 100% del ancho disponible */
+    margin-bottom: 20px; /* Añade espacio debajo de cada elemento */
+    min-width: auto; /* Elimina la restricción de ancho mínimo en pantallas pequeñas */
+  }
+
+  .statNumber {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente del número para móviles */
+  }
+
+  .statLabel {
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente de la etiqueta para móviles */
+  }
+
+  .statSubLabel {
+    font-size: 0.875rem; /* Ajusta el tamaño de la fuente del sub-label para móviles */
+  }
+}

@@ -1,0 +1,118 @@
+.voice-chatbots-container, .video-call-container {
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  background: #0B2E54; /* Fondo blanco translúcido */
+  backdrop-filter: blur(10px); /* Añadir desenfoque de fondo */
+  max-width: 1200px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Título */
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Contenedor de descripciones */
+.description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Elemento individual */
+.feature-item {
+  background-color: #0B2E54; /* Fondo con transparencia */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.feature-item:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-elemento para brillo */
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(118, 107, 107, 0.1);
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.feature-item:hover::before {
+  opacity: 1;
+}
+
+/* Título del elemento */
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Descripción del elemento */
+.feature-item p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Botón CTA */
+.cta-button {
+  display: inline-block;
+  background-color: rgba(0, 123, 255, 0.8); /* Botón con transparencia */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cta-button:hover {
+  background-color: rgba(0, 86, 179, 0.8); /* Botón ligeramente más oscuro en hover */
+}
+
+/* Adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .feature-item {
+    padding: 20px;
+  }
+}

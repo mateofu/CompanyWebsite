@@ -1,0 +1,20 @@
+.text-container {
+    background-image: url('/frontend/public/sla.png'); /* Ruta correcta para acceder a la imagen en la carpeta public */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    padding: 20px; /* Ajusta el padding según lo necesario */
+    color: white; /* Asegúrate de que el texto sea visible sobre la imagen */
+}
+  
+.heading {
+    font-size: 2rem; /* Ajusta el tamaño de la fuente del encabezado */
+    margin-bottom: 10px; /* Ajusta el espacio debajo del encabezado */
+}
+  
+.paragraph {
+    font-size: 1rem; /* Ajusta el tamaño de la fuente del párrafo */
+    line-height: 1.5; /* Ajusta el espacio entre líneas para mejorar la legibilidad */
+}
+
+  

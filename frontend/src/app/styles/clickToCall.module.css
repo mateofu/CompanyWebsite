@@ -1,0 +1,101 @@
+.click-to-call-container {
+  position: relative; /* Necesario para el pseudo-elemento */
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+  background-color: #051647; /* Fondo blanco translúcido */
+  backdrop-filter: blur(10px); /* Añadir desenfoque de fondo */
+  max-width: 1200px;
+  box-shadow: #051647;
+  overflow: hidden;
+  background-size: cover; /* Cubrir todo el área */
+  background-position: center; /* Centrar la imagen */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Efecto de paralaje */
+}
+
+/* Capa semitransparente para oscurecer ligeramente el fondo */
+.click-to-call-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Ajusta la transparencia aquí */
+  z-index: 1;
+}
+
+/* El contenido debe estar por encima de la capa semitransparente */
+.click-to-call-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0f0d0d;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.description-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+
+.feature-item {
+  background-color: #001931; /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.feature-item p {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Adaptaciones para pantallas pequeñas */
+@media (max-width: 768px) {
+  .description-container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+}
+.image-container {
+  margin-top: 20px; /* Espacio entre el texto y la imagen */
+  display: flex;
+  justify-content: center; /* Centra la imagen */
+}
+
+.call-image {
+  max-width: 100%; /* Asegura que la imagen no sea más grande que su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+}

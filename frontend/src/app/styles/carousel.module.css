@@ -1,0 +1,119 @@
+/* Estilos para el carrusel */
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 20px 0; /* Añade un poco de padding superior e inferior */
+  position: relative;
+  border: 5px solid #ffffff; /* Borde blanco de 5px */
+  border-radius: 20px; /* Bordes redondeados opcionales */
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-top: 40px; /* Añade margen superior */
+  margin-bottom: 40px; /* Añade margen inferior */
+}
+
+.carousel-text {
+  font-size: 30px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+  margin-bottom: 20px;
+  color: #000000; /* Asegura que el texto sea visible */
+}
+
+.highlight {
+  font-weight: bold; /* Aplica negritas a los spans con esta clase */
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 100px; /* Espacio entre las imágenes */
+  animation: scrollLeft 30s linear infinite; /* Animación continua */
+}
+
+.carousel img {
+  height: 100px;
+  flex-shrink: 0;
+}
+
+@keyframes scrollLeft {
+  0% {
+      transform: translateX(100%); /* Inicia desde fuera de la vista por la derecha */
+  }
+  100% {
+      transform: translateX(-100%); /* Desplaza el carrusel hacia la izquierda */
+  }
+}
+
+/* Estilos para el contenedor de texto */
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 20px;
+  margin-top: 40px; /* Añade margen superior */
+  margin-bottom: 40px; /* Añade margen inferior */
+  max-width: 42rem; /* Ajusta el ancho máximo del contenedor */
+  background-size: contain; /* Contiene la imagen dentro del contenedor */
+  background-position: 90% center; /* Mueve la imagen más hacia la derecha */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: white; /* Asegúrate de que el texto sea visible sobre la imagen */
+  min-height: 400px; /* Ajusta la altura mínima para que la imagen se muestre completamente */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 1.5rem; /* Texto para móvil */
+  margin-bottom: 1.5rem; /* Agrega espacio debajo del título */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem; /* Ajusta el tamaño del texto para pantallas medianas */
+  }
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  color: #4a5568; /* Color gris para el texto */
+  margin-top: 1rem;
+  margin-bottom: 3rem; /* Agrega espacio debajo del párrafo */
+  text-align: justify; /* Justifica el texto */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 1.25rem; /* Ajusta el tamaño del texto para pantallas medianas */
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajusta el espacio entre los elementos */
+  padding: 20px;
+  background-color: #001f3f; /* Fondo opcional para el contenedor */
+  margin-top: 40px; /* Añade margen superior */
+  margin-bottom: 40px; /* Añade margen inferior */
+}
+
+.text-container {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  padding-right: 20px; /* Añade espacio entre el texto y la imagen */
+  color: white;
+}
+
+.image-container {
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+  width: 50%; /* Ajusta el ancho de la imagen según sea necesario */
+}
+
+.image {
+  width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Ajusta la imagen para que se contenga dentro del contenedor */
+}

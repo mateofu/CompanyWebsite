@@ -1,0 +1,55 @@
+/* HeroSection.css */
+
+/* Estilos generales para la sección Hero */
+.hero-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  flex-direction: column; /* Cambia a columna para centrar mejor el contenido */
+  background-color: #001E3D; /* Fondo oscuro */
+  padding: 50px; /* Espaciado interno alrededor del contenido */
+  color: white; /* Color del texto blanco para resaltar */
+  border-radius: 20px; /* Bordes redondeados para un look moderno */
+  text-align: center; /* Centra el texto */
+  height: auto; /* Elimina la altura fija */
+  max-width: 800px; /* Limita el ancho de la tarjeta */
+  margin: 50px auto; /* Centra la tarjeta con margen */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Agrega sombra para el efecto de tarjeta */
+  border: 1px solid #0a74da; /* Borde alrededor de la tarjeta */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Estilos para el título principal */
+.hero-left h1 {
+  font-size: 48px; /* Tamaño de fuente grande para destacar el título */
+  font-weight: 900; /* Negrita fuerte */
+  margin: 0; /* Elimina el margen */
+  color: white; /* Color del título */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Estilos para el texto de la derecha */
+.hero-right p {
+  font-size: 20px; /* Fuente más pequeña que el título, pero aún legible */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar la lectura */
+  max-width: 600px; /* Limita el ancho del párrafo para mejor legibilidad */
+  margin-top: 20px; /* Margen superior para separar del título */
+  color: #b0b0b0; /* Color gris claro para darle suavidad al texto */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 20px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .hero-left h1 {
+    font-size: 36px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+  }
+
+  .hero-right p {
+    font-size: 18px; /* Ajusta el tamaño del texto */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+}

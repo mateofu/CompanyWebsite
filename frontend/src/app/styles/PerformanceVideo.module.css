@@ -1,0 +1,60 @@
+.performanceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+  padding: 2rem;
+  background-color: #0000;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoContainer {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.performanceDetails {
+  flex: 1;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.performanceDetails h2 {
+  font-size: 4rem;
+  margin-bottom: 3.5rem; /* Aumenta el margen inferior del título */
+  color: #fff; /* Asegúrate de tener el color adecuado */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.performanceDetails p {
+  font-size: 1.2rem;
+  margin-top: 1.5rem; /* También puedes ajustar el margen superior del párrafo */
+  margin-bottom: 1.5rem; /* Ajusta si es necesario */
+  color: #fff;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.performanceDetails ul {
+  list-style: none;
+  padding: 0;
+}
+
+.performanceDetails ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.performanceDetails ul li::before {
+  content: '✔️';
+  margin-right: 0.5rem;
+  color: #2c3e50;
+}

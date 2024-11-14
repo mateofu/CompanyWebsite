@@ -1,0 +1,90 @@
+.subscribeContainer {
+  background-color: #0b112e; 
+  padding: 40px 20px;
+  text-align: center;
+  color: #e6cece;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.logoSection {
+  text-align: left; /* Asegura que todo el contenido dentro de la logoSection esté alineado a la izquierda */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.logoSection h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido verticalmente al inicio */
+  justify-content: flex-start; /* Alinea el contenido horizontalmente a la izquierda */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.logoSection p {
+  font-size: 0.875rem;
+  color: #808080;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #808080;
+  padding-top: 20px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+}
+
+.socialIcons a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 40px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.footerLinks h3 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.footerLinks a {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  color: #808080;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.footerLinks a:hover {
+  color: #ffffff;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #808080;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

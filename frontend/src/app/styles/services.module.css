@@ -1,0 +1,41 @@
+.serviceCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.return-button {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.return-button:hover {
+  background-color: #005bb5;
+}
+
+/* src/styles/services.module.css */
+.backgroundContainer {
+  background-image: url('/fondo.png'); /* Ruta directa a la imagen en la carpeta `public` */
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-color: rgba(255, 255, 255, 0.5); /* Color blanco con transparencia del 50% */
+  padding: 20px; /* Espacio interno opcional */
+  min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la página */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}

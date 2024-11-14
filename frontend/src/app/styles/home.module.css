@@ -1,0 +1,8 @@
+.wrapper {
+  overflow: hidden; /* Evita el desplazamiento predeterminado del contenedor */
+}
+
+.content {
+  overflow-y: auto; /* Asegura el desplazamiento del contenido */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter si hay texto dentro del contenido */
+}

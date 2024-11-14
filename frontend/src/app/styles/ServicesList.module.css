@@ -1,0 +1,70 @@
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-size: cover; /* Hace que la imagen cubra toda la tarjeta */
+  background-position: center; /* Centra la imagen de fondo */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  min-width: 500px;
+  min-height: 250px; /* Establece una altura mínima */
+  flex: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  color: white; /* Asegúrate de que el texto sea visible sobre la imagen de fondo */
+  padding: 20px; /* Añade padding para dar espacio al contenido */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar la legibilidad del texto */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row; /* Alinea el contenido horizontalmente */
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%; /* Asegura que la superposición cubra toda la tarjeta */
+  height: 100%; /* Asegura que la superposición cubra toda la tarjeta */
+  padding: 20px; /* Añade padding para dar espacio al contenido */
+}
+
+.icon {
+  font-size: 3rem;
+  margin-right: 20px;
+  flex-shrink: 0; /* Evita que el ícono se reduzca de tamaño */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%; /* Asegura que el contenido ocupe todo el espacio restante */
+  overflow: hidden; /* Controla el desbordamiento del contenido */
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: pre-line;
+  overflow-y: auto; /* Añade scroll si el texto es demasiado largo */
+  max-height: 100%; /* Asegura que el texto no desborde la tarjeta */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}

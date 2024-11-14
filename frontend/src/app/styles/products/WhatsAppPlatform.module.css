@@ -1,0 +1,50 @@
+.platform-wrapper {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  padding: 20px; /* Añade un padding externo */
+  box-sizing: border-box; /* Asegura que el padding esté dentro del ancho total */
+}
+
+.platform-item {
+  padding: 20px;
+  border-radius: 15px; /* Bordes redondeados */
+  background: rgba(36, 7, 71, 0.85); /* Fondo oscuro con transparencia */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 1200px; /* Ancho máximo en pantallas grandes */
+  margin: 0 auto; /* Centra el contenedor en pantallas grandes */
+}
+.platform-logos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumentamos el espacio entre los logos */
+    margin-top: 40px; /* Añadimos espacio entre el texto de arriba y los logos */
+    margin-bottom: 20px; /* Espacio debajo de los logos */
+    align-items: center; /* Centrar verticalmente los logos */
+  }
+  
+  .platform-logo {
+    width: 150px; /* Tamaño fijo de ancho */
+    height: 150px; /* Tamaño fijo de alto */
+    object-fit: contain; /* Mantiene las proporciones */
+    padding: 10px; /* Espacio interno del logo */
+    background-color: #5AD3FB; /* Fondo opcional */
+    border-radius: 8px; /* Bordes redondeados */
+  }
+  
+
+.platform-item h3 {
+  font-size: 28px; /* Tamaño del título */
+  font-weight: 700; /* Texto más grueso */
+  color: #ffffff; /* Color del título */
+  margin-bottom: 20px;
+}
+
+.platform-item p {
+  font-size: 18px; /* Tamaño del texto */
+  line-height: 1.6; /* Espaciado de las líneas */
+  color: #fffdfd; /* Color del texto */
+  font-family: 'Inter', sans-serif; /* Fuente */
+  margin-bottom: 15px;
+}

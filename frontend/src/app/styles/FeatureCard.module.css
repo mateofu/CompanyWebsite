@@ -1,0 +1,90 @@
+/* src/styles/FeatureCard.module.css */
+.card {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Ajusta la altura según sea necesario */
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px; /* Agrega un margen inferior para separar las tarjetas */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar la legibilidad */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Alinea el contenido horizontalmente */
+  padding: 40px;
+  text-align: center; /* Alinea el texto al centro */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center; /* Alinea el texto del título al centro */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  white-space: pre-line;
+  text-align: justify;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Contenedor de columnas */
+.columnContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px; /* Espacio entre columnas */
+}
+
+.column {
+  flex: 1; /* Asegura que ambas columnas ocupen el mismo ancho */
+  text-align: justify;
+  padding: 0 50px; /* Espacio entre las columnas */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .description {
+    font-size: 0.8rem; /* Tamaño más pequeño para pantallas pequeñas */
+    text-align: justify;
+  }
+
+  .card {
+    height: auto; /* Permite que la altura de la tarjeta se ajuste automáticamente */
+    padding: 20px; /* Reduce el padding para más espacio en pantallas pequeñas */
+  }
+
+  .overlay {
+    padding: 20px; /* Reduce el padding interno del overlay */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Reduce el tamaño del título en pantallas pequeñas */
+  }
+
+  /* Flexbox para asegurar que el contenido se ajusta bien */
+  .columnContainer {
+    flex-direction: column; /* Cambia a disposición en columna en pantallas pequeñas */
+    gap: 20px; /* Ajusta el espacio entre las columnas */
+  }
+
+  .column {
+    padding: 0; /* Elimina el padding entre las columnas en pantallas pequeñas */
+  }
+}

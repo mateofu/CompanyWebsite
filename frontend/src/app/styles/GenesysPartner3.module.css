@@ -1,0 +1,100 @@
+.container {
+  background-color: #0B112E; /* Fondo azul oscuro */
+  border-radius: 10px; /* Bordes redondeados */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  margin-top: 40px;  /* Margen superior */
+  margin-bottom: 40px; /* Margen inferior */
+  margin-left: auto;
+  margin-right: auto; /* Centra el contenedor horizontalmente */
+  
+  /* Efecto 3D */
+  perspective: 1000px; /* Define la perspectiva para el efecto 3D */
+  transform: rotateX(5deg) rotateY(5deg);
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3); /* Sombra para efecto de profundidad */
+  transition: transform 0.5s ease, box-shadow 0.5s ease; /* Transiciones suaves */
+}
+
+.container:hover {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05); /* Efecto al pasar el ratón */
+  box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.9); /* Incrementa la sombra al hacer hover */
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.leftSection {
+  flex: 1;
+  color: #fff;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.purchaseButton {
+  background-color: #fff;
+  color: #0051D4;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.purchaseButton:hover {
+  background-color: #f0f0f0; /* Color de fondo al pasar el ratón */
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Alinea el contenido de la derecha (logo) */
+  text-align: right;
+}
+
+.logo {
+  width: 400px; /* Ajusta el tamaño del logotipo */
+  margin-bottom: 30px;
+  filter: invert(100%) sepia(100%) saturate(200%) hue-rotate(170deg) brightness(1) contrast(1); /* Aproximación al color #5AD3FB */
+}
+
+/* Cambia el filtro al pasar el ratón */
+.logo:hover {
+  filter: none; /* Elimina los filtros al hacer hover */
+}
+
+.partnerText {
+  color: #FFFFFF; /* Aplica color blanco al texto asociado a la imagen */
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; /* Aumenta el ancho en pantallas pequeñas */
+    max-width: none; /* Elimina el ancho máximo en pantallas pequeñas */
+  }
+  .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .rightSection, .leftSection {
+    margin-bottom: 20px;
+  }
+}

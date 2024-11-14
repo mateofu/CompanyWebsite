@@ -1,0 +1,79 @@
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Limita a 3 columnas máximo por fila */
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  text-align: center;
+  height: 100%;
+  min-height: 450px; /* Asegura que todas las tarjetas tengan una altura mínima */
+  overflow: hidden;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
+  height: 100%;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardTitle {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+  color: #05101c;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Cambiamos la descripción para usar una lista */
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 5rem;
+  color: #7f8c8d;
+  text-align: left; /* Cambiamos el texto a la izquierda para mejor alineación */
+  list-style-type: none; /* Eliminamos los puntos predeterminados de la lista */
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardDescription li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem; /* Espacio entre los elementos de la lista */
+}
+
+.cardDescription li::before {
+  content: '✔️';
+  margin-right: 0.3rem; /* Espacio entre el checkmark y el texto */
+  color: #2c3e50; /* Puedes ajustar el color del checkmark aquí */
+}
+
+.cardImage {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .cardImage {
+  opacity: 0.9;
+}

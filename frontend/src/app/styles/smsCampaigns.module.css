@@ -1,0 +1,149 @@
+.sms-campaigns-container {
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, rgba(13, 42, 72, 0.9), rgba(0, 51, 102, 0.9)), url('/email2.jpg'); /* Degradado con imagen de fondo */
+  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  max-width: 1200px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Sombra sutil para el contenedor principal */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente si es necesario */
+}
+
+.email-campaigns-container {
+  padding: 40px 20px;
+  border-radius: 8px;
+  margin: 40px auto;
+  background: linear-gradient(135deg, rgba(13, 42, 72, 0.9), rgba(0, 51, 102, 0.9)), url('/phone2.jpg'); /* Degradado y fondo de Email */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1200px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Título */
+.title {
+  font-size: 36px; /* Aumenta ligeramente el tamaño del título */
+  font-weight: bold;
+  color: #efe6e6;
+  text-align: center;
+  margin-bottom: 50px; /* Más espacio debajo del título */
+  letter-spacing: 1px; /* Espacio entre letras para darle estilo */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Contenedor de características */
+.description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+/* Elemento individual */
+.feature-item {
+  background-color: #001C38;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  position: relative; /* Para poder agregar pseudo-elementos */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+  justify-content: center; /* Asegura que la imagen dentro también esté centrada */
+  
+}
+
+/* Efecto de hover */
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Borde luminoso */
+}
+
+/* Título del elemento */
+.feature-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f6e8e8;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1; /* Asegura que el texto esté sobre otros elementos */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Descripción del elemento */
+.feature-item p {
+  font-size: 16px;
+  color: #f3e9e9;
+  text-align: justify;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+/* Pseudo-elemento brillante en hover */
+.feature-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-item:hover::before {
+  opacity: 1; /* Brillo en hover */
+}
+
+/* Botón CTA */
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+  .description-container {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    grid-gap: 20px;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+}
+
+
+.campaign-image {
+  max-width: 100%; /* Asegura que la imagen no sobrepase su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  object-fit: contain; /* Asegura que la imagen se ajuste bien sin perder proporciones */
+}
+
+
+
+

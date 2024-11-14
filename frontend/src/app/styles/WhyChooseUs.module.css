@@ -1,0 +1,84 @@
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #fff;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Aumenta el espacio entre las tarjetas */
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  cursor: pointer;
+  transform-origin: center; /* El zoom será hacia el centro */
+  flex-shrink: 0; /* Evita que las tarjetas se encojan al hacer zoom */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Estilos para la parte de texto en la parte inferior */
+.cardContent {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: #fff;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardTitle {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardText {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.card.active {
+  transform: scale(1.1); /* Reduce el zoom a 1.1 para evitar desbordes */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}

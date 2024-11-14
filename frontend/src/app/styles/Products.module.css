@@ -1,0 +1,120 @@
+.container {
+  padding: 40px;
+  background-color: #000;
+  text-align: center;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.title {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #999;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se ajusten a la línea siguiente si es necesario */
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Hace que cada tarjeta ocupe un tercio del ancho */
+  max-width: 350px; /* Limita el ancho máximo de cada tarjeta */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardList {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: left;
+  padding-left: 0;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.cardList li {
+  list-style: none;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cardList li::before {
+  content: '✔️'; /* Puedes usar un icono mejor si lo prefieres */
+  margin-right: 10px;
+  color: #00ff00; /* Color del check */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.docsButton, .examplesButton {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.docsButton:hover, .examplesButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Diseño responsivo para pantallas más pequeñas */
+@media (max-width: 1024px) {
+  .card {
+    width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Una tarjeta por fila en pantallas pequeñas */
+  }
+}

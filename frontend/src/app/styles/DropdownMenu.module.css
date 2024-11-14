@@ -1,0 +1,112 @@
+/* Contenedor del menú desplegable */
+.dropdownContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownLinkWrapper {
+  display: inline-block;
+}
+
+.dropdownLink {
+  color: #0f0d0d;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #32c9fb 8%, transparent 40%);
+  background-size: 100% 200%; /* Hace que el fondo sea el doble del tamaño del elemento */
+  background-position: 0 100%; /* Coloca el fondo en la parte inferior */
+  transition: background-position 1.2s ease; /* Transición suave en el background-position */
+}
+
+.dropdownLink:hover {
+  background-position: 0 0; /* Mueve el fondo desde abajo hacia arriba */
+}
+
+/* Menú desplegable con fondo transparente */
+.dropdownMenu {
+  position: absolute;
+  left: -150px; /* Mover más a la izquierda, ajusta este valor según sea necesario */
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.2); /* Fondo blanco semitransparente */
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  gap: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Lista del menú */
+.menuList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dividir en dos columnas */
+  gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilos de cada item del menú */
+.menuItem {
+  display: flex;
+  align-items: center; /* Alinear el ícono y el texto verticalmente */
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para los elementos */
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.menuItem:hover {
+  background-color: rgba(224, 224, 224, 0.8); /* Color semitransparente al pasar el ratón */
+}
+
+/* Enlace que envuelve todo el elemento para hacerlo completamente clicable */
+.fullLink {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente para los elementos */
+  border-radius: 8px;
+  text-decoration: none; /* Sin subrayado en el enlace */
+  transition: background-color 0.2s ease;
+}
+
+.fullLink:hover {
+  background-color: rgba(224, 224, 224, 0.8); /* Color semitransparente al pasar el ratón */
+}
+
+/* Ajustar el tamaño de los íconos */
+.menuIcon img {
+  width: 50px; /* Ajusta el tamaño del ícono según sea necesario */
+  height: 50px;
+  margin-right: 60px; /* Separación entre ícono y texto */
+  object-fit: contain; /* Asegura que el ícono no se deforme */
+}
+
+.menuContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0;
+  color: #000;
+}
+
+.menuContent p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0 0;
+}

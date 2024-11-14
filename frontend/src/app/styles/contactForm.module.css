@@ -1,0 +1,187 @@
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f4f9;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 1200px;
+  margin: 4rem auto; /* Añade espacio superior e inferior de 4rem */
+  gap: 2rem; /* Espacio entre la imagen y el formulario */
+}
+
+.image-container {
+  flex: 2; /* Aumentamos el tamaño de la imagen ocupando más espacio */
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image {
+  max-width: 100%; /* Cambia el tamaño máximo de la imagen */
+  height: auto;
+  border-radius: 40px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #080713;
+  margin-bottom: 1.5rem;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 1;
+  color: #000; /* Color del texto negro */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem;
+  border: 2px solid #100b14;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #b1b1b1;
+}
+
+.form-group textarea {
+  min-height: 100px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.checkbox {
+  grid-column: span 2;
+}
+
+.checkbox input {
+  margin-right: 10px; /* Espacio de 10px entre el checkbox y el texto */
+}
+
+.submit-button {
+  grid-column: span 2;
+  background-color: #49CFFB;
+  color: #fff;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.submit-button:hover {
+  background-color: #0fb673;
+}
+
+.privacy-notice {
+  grid-column: span 2;
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 1rem;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.privacy-notice a {
+  color: #7e22ce;
+  text-decoration: underline;
+}
+
+.header-container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #e6e6fa; /* Color de fondo claro */
+  margin-bottom: 2rem; /* Espacio inferior para separar el formulario */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #49CFFB; /* Color morado */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.header-subtitle {
+  font-size: 1.25rem;
+  color: #555;
+  margin-top: 0.5rem;
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.image-text-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-title {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #49CFFB; /* Color del texto */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+  z-index: 2; /* Asegura que el texto esté encima de la imagen */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.image-subtitle {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #555;
+  font-size: 1.25rem;
+  text-align: left;
+  z-index: 2; /* Asegura que el subtítulo esté encima de la imagen */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
+
+.contact-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 40px;
+  z-index: 1; /* Asegura que la imagen esté detrás del texto */
+}
+
+.form-group-full {
+  grid-column: span 2; /* Ocupa ambas columnas del grid */
+}
+
+.textarea-full {
+  width: 100%; /* Asegura que ocupe el 100% del ancho disponible */
+  min-height: 100px; /* Ajusta la altura mínima */
+  padding: 1rem; /* Aumenta el padding interno */
+  border-radius: 10px; /* Mantén el borde redondeado */
+  border: 2px solid #49CFFB; /* Color de borde morado */
+  font-family: 'Inter', sans-serif; /* Aplica la fuente Inter */
+}
